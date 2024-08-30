@@ -1,11 +1,18 @@
 # Base app in python.
 
-from kivy.app import App
+import kivy
+kivy.require('2.3.0')
 
-class NameApp(): # For change name of app change to 'Your name app'App.
+from kivy.app import App
+from kivy.uix.floatlayout import FloatLayout
+
+class NameApp(App): # For change name of app change to 'Your name app'App.
+
   def build(self):
 
-    return
+    fl = FloatLayout(size=(500, 250)) # Layout for place a object.
 
-if __name__ == "__Main__":
-  NameApp() # Change this to name of class.
+    return fl # Show a all object in layout.
+
+if __name__ == "__main__":
+  NameApp().run() # Change this to name of class.
