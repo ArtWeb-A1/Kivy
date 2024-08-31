@@ -1,1 +1,4 @@
-#Main function for kivy.
+Main function for kivy.
+
+
+App.py - is for create main window.
